@@ -18,7 +18,7 @@ function debug_info()
         "authorsite"    => "http://mybbservice.de/",
         "version"        => "&infin;",
         "guid"             => "",
-        "compatibility" => "16*"
+        "compatibility" => "*"
     );
 }
 
