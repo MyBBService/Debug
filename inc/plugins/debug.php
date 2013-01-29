@@ -71,14 +71,14 @@ function debug_uninstall()
 	$db->delete_query("templates", "title in ('{$deltemplates}')");
 }
 
-function debug($var, $name)
+function debug($var, $name = "[Undefined]")
 {
 	global $output, $name_array;
 	
 	if(!isset($name_array))
 	    $name_array = array();
 	
-	if(substr($name, 0, 1) != "$")
+	if(substr($name, 0, 1) != "$" && $name != "[Undefined]")
 	    $name = "$".$name;
 	    
 	if(array_key_exists($name, $name_array)) {
